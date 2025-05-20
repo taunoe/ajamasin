@@ -29,24 +29,24 @@ label {
 button {
     padding: 0.5rem;
     padding-inline: 1rem;
-    background-color: #0171f1;
+    background-color: #D5EA3B;
     color: white;
     border: none;
 }
 
 button:focus-visible {
-    outline: 0.1rem solid black;
+    outline: 0.1rem solid #003539;
 }
 
 input {
     flex-grow: 1;
     padding: 0.5rem;
-    background-color: #cccccc;
+    background-color: #F1F79F;
     border: none;
 }
 
 input:focus-visible {
-    outline: 0.1rem solid #0171f1;
+    outline: 0.1rem solid #D5EA3B;
 }
 
 .timer {
