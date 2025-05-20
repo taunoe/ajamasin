@@ -1,0 +1,81 @@
+@import url("fonts.css");
+
+* {
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+section {
+    margin-block: 0.5rem;
+    padding: 0.5rem;
+    padding-inline: 1rem;
+    background-color: #eeeeee;
+}
+
+section > div, section > p {
+    margin-block: 0.5rem;
+}
+
+label {
+    display: inline-block;
+    width: 5rem;
+}
+
+button {
+    padding: 0.5rem;
+    padding-inline: 1rem;
+    background-color: #0171f1;
+    color: white;
+    border: none;
+}
+
+button:focus-visible {
+    outline: 0.1rem solid black;
+}
+
+input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    background-color: #cccccc;
+    border: none;
+}
+
+input:focus-visible {
+    outline: 0.1rem solid #0171f1;
+}
+
+.timer {
+    display: none;
+}
+
+.renderedTimer {
+    max-width: 100%;
+    height: fit-content;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+@media (max-width: calc(1280px + 1rem)) {
+    body {
+        max-width: calc(100% - 1rem);
+    }
+}
+
+@media (max-width: 400px) {
+    .field {
+        flex-wrap: wrap;
+    }
+
+    .field label {
+        width: 100%;
+    }
+}
