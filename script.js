@@ -19,7 +19,7 @@ window.addEventListener("load", function() {
         return typeof(searchParams) === "string" ? decodeURIComponent(searchParams) : searchParams;
     }
 
-    function writeText(text, x, y, size = 64, colour = "white") {
+    function writeText(text, x, y, size = 80, colour = "white") {
         context.font = `${size}px "DM Sans"`;
         context.fillStyle = colour;
         context.textBaseline = "middle";
@@ -52,9 +52,9 @@ window.addEventListener("load", function() {
         var timeColour = "white";
 
         if (timeLeft < 0) {
-            timeColour = "red";
+            timeColour = "#FA5050";
         } else if (timeLeft < 30_000) {
-            timeColour = "yellow";
+            timeColour = "#D5EA3B";
         }
 
         writeText(currentTimeDisplay, timerCanvas.width - 80, 42, 48);
