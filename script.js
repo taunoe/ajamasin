@@ -47,7 +47,7 @@ window.addEventListener("load", function() {
         
         context.fillRect(0, 0, timerCanvas.width, timerCanvas.height);
         
-        context.drawImage(blocksLogo, 16, 16, 128, 128 * (blocksLogo.height / blocksLogo.width));
+        context.drawImage(blocksLogo, 5, 5, 5, 5 * (blocksLogo.height / blocksLogo.width));
 
         var timeColour = "white";
 
@@ -57,9 +57,9 @@ window.addEventListener("load", function() {
             timeColour = "#D5EA3B";
         }
 
-        writeText(currentTimeDisplay, timerCanvas.width - 80, 52, 48);
+        writeText(currentTimeDisplay, timerCanvas.width - 80, 52, 64);
         writeText(timeDisplay, timerCanvas.width / 2, timerCanvas.height / 2, 240, timeColour);
-        writeText(note || "", timerCanvas.width / 2, timerCanvas.height - 64, 48);
+        writeText(note || "", timerCanvas.width / 2, timerCanvas.height - 64, 64);
 
         requestAnimationFrame(render);
     }
