@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ajamasin</title>
+        <title>BBC Presenter Timer</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <link rel="stylesheet" href="style.css">
-        <!--//<script src="peerjs.min.js"></script>-->
-        <https://unpkg.com/peerjs@1.5.1/dist/peerjs.min.js></https:>
+        <script src="https://unpkg.com/peerjs@1.5.1/dist/peerjs.min.js"></script>
         <script type="module" src="script.js"></script>
     </head>
     <body>
-        <h1>Ajamasin</h1>
-        <canvas width="1280" height="760" class="timer"></canvas>
-        <video playsinline autoplay muted width="1280" height="720" class="renderedTimer"></video>
+        <h1>Presenter Timer</h1>
+        <canvas width="640" height="360" class="timer"></canvas>
+        <video playsinline autoplay muted width="640" height="360" class="renderedTimer"></video>
         <section>
             <div class="field">
-                <label for="endTime">Lõpuaeg</label>
+                <label for="endTime">End time</label>
                 <input type="datetime-local" id="endTime">
-                <button id="applyEndTimeButton">lisa</button>
+                <button id="applyEndTimeButton">Apply</button>
             </div>
             <div class="field">
-                <label for="note">Esineja</label>
+                <label for="note">Note</label>
                 <input placeholder="Displays under remaining time" id="note">
-                <button id="applyNoteButton">Lisa</button>
+                <button id="applyNoteButton">Apply</button>
             </div>
             <div class="field">
-                <button id="clearEndTimeButton">Kustuta kellaaeg </button>
-                <button id="clearNoteButton">Kustuta esineja</button>
+                <button id="clearEndTimeButton">Clear end time</button>
+                <button id="clearNoteButton">Clear note</button>
             </div>
         </section>
-        <!--
         <section>
             <p class="ownPeerId"></p>
             <div class="field">
@@ -39,6 +37,8 @@
             </div>
             <p class="connectionMessage">Ready to connect</p>
         </section>
-        -->
+        <p><em>Presenter Timer</em> is a tool for conducting time-slotted presentation sessions that is intended to remind speakers of their remaining time.</p>
+        <p>The display readout can be shown by your browser in a picture-in-picture mode that can be overlaid on top of the presenter view of your favourite presentation software.</p>
+        <p>&copy; 2023 BBC. Built by James Livesey.</p>
     </body>
 </html>
