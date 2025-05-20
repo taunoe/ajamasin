@@ -58,7 +58,7 @@ window.addEventListener("load", function() {
         }
 
         writeText(currentTimeDisplay, timerCanvas.width - 80, 42, 48);
-        writeText(timeDisplay, timerCanvas.width / 2, timerCanvas.height / 2, 180, timeColour);
+        writeText(timeDisplay, timerCanvas.width / 2, timerCanvas.height / 2, 240, timeColour);
         writeText(note || "", timerCanvas.width / 2, timerCanvas.height - 64, 48);
 
         requestAnimationFrame(render);
