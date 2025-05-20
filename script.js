@@ -19,7 +19,7 @@ window.addEventListener("load", function() {
         return typeof(searchParams) === "string" ? decodeURIComponent(searchParams) : searchParams;
     }
 
-    function writeText(text, x, y, size = 80, colour = "white") {
+    function writeText(text, x, y, size = 120, colour = "white") {
         context.font = `${size}px "DM Sans"`;
         context.fillStyle = colour;
         context.textBaseline = "middle";
@@ -43,7 +43,7 @@ window.addEventListener("load", function() {
             }
         }
 
-        context.fillStyle = "#003539";
+        context.fillStyle = "black";
         
         context.fillRect(0, 0, timerCanvas.width, timerCanvas.height);
         
@@ -58,7 +58,7 @@ window.addEventListener("load", function() {
         }
 
         writeText(currentTimeDisplay, timerCanvas.width - 80, 42, 48);
-        writeText(timeDisplay, timerCanvas.width / 2, timerCanvas.height / 2, 128, timeColour);
+        writeText(timeDisplay, timerCanvas.width / 2, timerCanvas.height / 2, 180, timeColour);
         writeText(note || "", timerCanvas.width / 2, timerCanvas.height - 64, 48);
 
         requestAnimationFrame(render);
