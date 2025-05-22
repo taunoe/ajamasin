@@ -51,3 +51,19 @@
   font-weight: 900;
   src: url('./fonts/dm-sans-v15-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+@font-face {
+  font-display: swap;
+  font-family: 'space_monobold';
+  src: url('SpaceMono-Bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'space_monoregular';
+  src: url('SpaceMono-Regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
