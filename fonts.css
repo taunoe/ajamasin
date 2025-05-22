@@ -55,7 +55,7 @@
 @font-face {
   font-display: swap;
   font-family: 'space_monobold';
-  src: url('SpaceMono-Bold-webfont.woff') format('woff');
+  src: url('./fonts/SpaceMono-Bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -63,7 +63,7 @@
 @font-face {
   font-display: swap;
   font-family: 'space_monoregular';
-  src: url('SpaceMono-Regular-webfont.woff') format('woff');
+  src: url('./fonts/SpaceMono-Regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

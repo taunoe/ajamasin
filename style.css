@@ -1,7 +1,7 @@
 @import url("fonts.css");
 
 * {
-    font-family: "DM Sans", sans-serif;
+    font-family: "DM Sans", "space_monobold", "space_monoregular", sans-serif;
     box-sizing: border-box;
 }
 
