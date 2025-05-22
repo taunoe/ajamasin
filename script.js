@@ -53,7 +53,7 @@ window.addEventListener("load", function() {
 
         if (timeLeft < 0) {
             timeColour = "#FA5050";
-        } else if (timeLeft < 30_000) {
+        } else if (timeLeft < 60_000) { // Viimane minut
             timeColour = "#D5EA3B";
         }
 
