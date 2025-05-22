@@ -57,7 +57,7 @@ window.addEventListener("load", function() {
             timeColour = "#D5EA3B";
         }
 
-        writeText(currentTimeDisplay, timerCanvas.width - 80, 52, 64);
+        writeText(currentTimeDisplay, timerCanvas.width - 120, 52, 64);
         writeText(timeDisplay, timerCanvas.width / 2, timerCanvas.height / 2, 240, timeColour);
         writeText(note || "", timerCanvas.width / 2, timerCanvas.height - 64, 64);
 
