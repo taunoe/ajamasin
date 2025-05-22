@@ -8,6 +8,7 @@
 body {
     max-width: 1280px;
     margin-inline: auto;
+    background-color: #afafaf;
 }
 
 section {
@@ -15,6 +16,7 @@ section {
     padding: 0.5rem;
     padding-inline: 1rem;
     background-color: #eeeeee;
+    border-radius: 0.5rem;
 }
 
 section > div, section > p {
@@ -32,6 +34,7 @@ button {
     background-color: #003539;
     color: #D5EA3B;
     border: none;
+    border-radius: 0.5rem;
 }
 
 button:focus-visible {
