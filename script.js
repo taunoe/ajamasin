@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
     }
 
     function writeText(text, x, y, size = 120, colour = "white") {
-        context.font = `${size}px "space_monobold"`;
+        context.font = `${size}px "space_monoregular"`;
         context.fillStyle = colour;
         context.textBaseline = "middle";
         context.textAlign = "center";
