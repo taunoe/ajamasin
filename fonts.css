@@ -55,15 +55,15 @@
 @font-face {
   font-display: swap;
   font-family: 'space_monobold';
-  src: url('./fonts/SpaceMono-Bold-webfont.woff') format('woff');
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/SpaceMono-Bold-webfont.woff') format('woff');
 }
 
 @font-face {
   font-display: swap;
   font-family: 'space_monoregular';
-  src: url('./fonts/SpaceMono-Regular-webfont.woff') format('woff');
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/SpaceMono-Regular-webfont.woff') format('woff');
 }
