@@ -2,7 +2,7 @@ window.addEventListener("load", function() {
     var timerCanvas = document.querySelector(".timer");
     var context = timerCanvas.getContext("2d");
     var timerVideo = document.querySelector(".renderedTimer");
-    var blocksLogo = new Image();
+    //var blocksLogo = new Image();
     var peer = new Peer(null, {debug: 2});
     var openConnections = [];
 
@@ -47,7 +47,7 @@ window.addEventListener("load", function() {
         
         context.fillRect(0, 0, timerCanvas.width, timerCanvas.height);
         
-        context.drawImage(blocksLogo, 5, 5, 5, 5 * (blocksLogo.height / blocksLogo.width));
+        //context.drawImage(blocksLogo, 5, 5, 5, 5 * (blocksLogo.height / blocksLogo.width));
 
         var timeColour = "white";
 
@@ -138,7 +138,7 @@ window.addEventListener("load", function() {
         });
     })
 
-    blocksLogo.src = "logo-white.svg";
+    //blocksLogo.src = "logo-white.svg";
     timerVideo.srcObject = timerCanvas.captureStream();
 
     document.querySelector("#endTime").value = new Date().toISOString().slice(0, 16);
