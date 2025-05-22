@@ -46,6 +46,7 @@ input {
     padding: 0.5rem;
     background-color: #F1F79F;
     border: none;
+    border-radius: 0.5rem;
 }
 
 input:focus-visible {
@@ -59,6 +60,7 @@ input:focus-visible {
 .renderedTimer {
     max-width: 100%;
     height: fit-content;
+    border-radius: 0.5rem;
 }
 
 .field {
